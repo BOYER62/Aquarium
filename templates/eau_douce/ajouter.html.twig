@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un poisson{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{asset('assets/css/eauDouce.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    {{form_start(identiteAquarium)}}
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <label for="maintenance" class="text">Maintenance</label>
+                    <select id="maintenance" name="maintenance" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        {% for niveaux in niveaux %}
+                            <option value="{{niveaux.name}}">{{niveaux.name|upper}}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="soins" class="text">Soins</label>
+                    <select id="soins" name="soins" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        {% for niveaux in niveaux %}
+                            <option value="{{niveaux.name}}">{{niveaux.name|upper}}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="reproduction" class="text">Reproduction</label>
+                    <select id="reproduction" name="reproduction" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        {% for niveaux in niveaux %}
+                            <option value="{{niveaux.name}}">{{niveaux.name|upper}}</option>
+                        {% endfor %}
+                    </select>
+                        {{ form_row(identiteAquarium.identite.image1) }}
+                        {{ form_row(identiteAquarium.identite.image2) }}
+                </div>
+                <div class="col">
+                    {{ form_row(identiteAquarium.identite) }}
+                </div>
+                <div class="col">
+                    {{ form_row(identiteAquarium.aquarium) }}
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-sm">VALIDER</button>
+        </div>
+    {{form_end(identiteAquarium)}}
+{% endblock %}

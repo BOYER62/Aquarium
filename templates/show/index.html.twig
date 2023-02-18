@@ -1,0 +1,163 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voir poissons{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{asset('assets/css/voirEauDouce.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <p><img class="poissonsMin" src="{{ asset('images/scalaire.jpg') }}"></p>
+    <h1>Les Poissons d'eau douce</h1>
+    <div>
+        <ul class="list-group list-group-horizontal">
+            <li class="col-3 list-group-item">Maintenance :</li>
+            <li class="col-3 list-group-item">Soins :</li>
+            <li class="col-3 list-group-item">Reproduction :</li>
+            <li class="col-3 list-group-item">Coût :</li>
+        </ul>
+    </div>
+    <div class="section">
+        <img class="poissons" src="{{ asset('images/scalaire.jpg') }}">
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="col">
+                <img src="{{ asset('/images/cartes/Amazonrivermap_fr.svg.png') }}">
+            </div>
+            <div class="col">
+                <h2>Descriptions</h2>
+            </div>
+            <div class="col">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Fiche d'identité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nom scientifique</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Nom commun</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Famille</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Origine</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Biotope naturel</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Taille</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Différences sexuelles</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Comportement</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">La vie en aquarium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maintenance</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>pH</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Dureté TH</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Température</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Changement d'eau</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Nourriture</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Reproduction</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Compatibilité</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Espérence de vie</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
